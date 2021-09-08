@@ -1,0 +1,17 @@
+{
+  "dev": {
+    "bsFiles": {
+      "src": [
+        "css/*.css",
+        "*.html",
+        "js/*.js"
+      ]
+    },
+    "options": {
+      "watchTask": true,
+      "server": {
+        "baseDir": "./"
+      }
+    }
+  }
+}

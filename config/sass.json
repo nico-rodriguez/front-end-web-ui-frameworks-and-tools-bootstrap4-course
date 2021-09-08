@@ -1,0 +1,10 @@
+{
+  "options": {
+    "implementation": "sass"
+  },
+  "dist": {
+    "files": {
+      "css/styles.css": "css/styles.scss"
+    }
+  }
+}

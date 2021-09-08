@@ -1,0 +1,8 @@
+{
+  "html": ["dist/contactus.html", "dist/aboutus.html", "dist/index.html"],
+  "options": {
+    "assets": {
+      "assetsDirs": ["dist", "dist/css", "dist/js"]
+    }
+  }
+}

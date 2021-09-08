@@ -1,0 +1,15 @@
+{
+  "options": {
+    "encoding": "utf-8",
+    "algorithm": "md5",
+    "length": 20
+  },
+  "release": {
+    "files": [{
+      "src": [
+        "dist/js/*.js",
+        "dist/css/*.css"
+      ]
+    }]
+  }
+}

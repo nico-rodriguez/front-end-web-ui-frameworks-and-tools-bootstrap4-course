@@ -1,0 +1,12 @@
+{
+  "dist": {
+    "options": {
+      "collapseWhitespace": true
+    },
+    "files": {
+      "dist/index.html": "dist/index.html",
+      "dist/contactus.html": "dist/contactus.html",
+      "dist/aboutus.html": "dist/aboutus.html"
+    }
+  }
+}

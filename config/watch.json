@@ -1,0 +1,12 @@
+{
+  "css": {
+    "files": "css/*.scss",
+    "tasks": ["sass"]
+  },
+  "configFiles": {
+    "files": ["Gruntfile.js", "config/*.json"],
+    "options": {
+      "reload": true
+    }
+  }
+}

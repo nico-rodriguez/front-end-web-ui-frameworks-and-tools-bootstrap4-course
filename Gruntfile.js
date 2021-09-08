@@ -2,52 +2,25 @@
 
 module.exports = function (grunt) {
   require('time-grunt')(grunt);
-  require('jit-grunt')(grunt);
-
-  const sass = require('node-sass');
-
-  grunt.initConfig({
-    sass: {
-      options: {
-        implementation: sass
-      },
-      dist: {
-        files: {
-          'css/styles.css': 'css/styles.scss'
-        }
-      }
-    },
-    watch: {
-      css: {
-        files: 'css/*.scss',
-        tasks: ['sass']
-      },
-      configFiles: {
-        files: 'Gruntfile.js',
-        options: {
-          reload: true
-        }
-      }
-    },
-    browserSync: {
-      dev: {
-        bsFiles: {
-          src: [
-            'css/*.css',
-            '*.html',
-            'js/*.js'
-          ]
-        },
-        options: {
-          watchTask: true,
-          server: {
-            baseDir: './'
-          }
-        }
-      }
-    }
+  require('jit-grunt')(grunt, {
+    useminPrepare: 'grunt-usemin'
   });
+
+  const configs = require('load-grunt-configs')(grunt);
+  grunt.initConfig(configs);
 
   grunt.registerTask('css', ['sass']);
   grunt.registerTask('default', ['browserSync', 'watch']);
+  grunt.registerTask('build', [
+    'clean',
+    'copy',
+    'imagemin',
+    'useminPrepare',
+    'concat',
+    'cssmin',
+    'uglify',
+    'filerev',
+    'usemin',
+    'htmlmin'
+  ])
 };
