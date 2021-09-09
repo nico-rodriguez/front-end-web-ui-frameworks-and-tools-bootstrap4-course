@@ -1,7 +1,3 @@
-'use strict';
-
-function watch() {
+export default function watch() {
   gulp.watch('./css/*.scss', ['sass']);
 };
-
-module.exports = watch;

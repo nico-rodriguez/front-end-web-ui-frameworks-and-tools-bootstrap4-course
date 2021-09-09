@@ -1,8 +1,6 @@
-'use strict';
+import bs from 'browser-sync';
 
-const bs = require('browser-sync');
-
-function browserSync() {
+export default function browserSync() {
   const files = [
     './*.html',
     './css/*css',
@@ -16,5 +14,3 @@ function browserSync() {
     }
   });
 };
-
-module.exports = browserSync;

@@ -1,12 +1,18 @@
-'use strict';
+import gulp from 'gulp';
 
-const gulp = require('gulp');
+import browserSync from './tasks/browserSync.js';
+import clean from './tasks/clean.js';
+import copyFonts from './tasks/copyFonts.js';
+import minifyImg from './tasks/minifyImg.js';
+import processSass from './tasks/processSass.js';
+import minifySource from './tasks/minifySource.js';
+import watch from './tasks/watch.js';
 
-const browserSync = require('./tasks/browserSync');
-const processSass = require('./tasks/processSass');
-const watch = require('./tasks/watch');
+
+const defaultTask = gulp.series(browserSync, watch);
+
+const build = gulp.series(clean, gulp.parallel(copyFonts, minifyImg, minifySource));
 
 
-const build = gulp.series(browserSync, watch);
-
-exports.default = build;
+export default defaultTask;
+export { build };
