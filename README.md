@@ -1,22 +1,14 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
-</p>
-
-<h3 align="center">confusion</h3>
+<h1 align="center">Front End Web UI Frameworks and Tools: Bootstrap4 Course</h1>
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![License](https://img.shields.io/badge/license-GPL--3-blue)](/LICENSE)
 
 </div>
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Source code for the application developed in the online course Front End Web UI Frameworks and Tools: Bootstrap4 Course.
     <br> 
 </p>
 
@@ -25,16 +17,26 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Deployment](#deployment)
-- [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+An up-to-date implementation in HTML, Bootstrap and jQuery of a web page for a restaurant which features:
+
+- Navbars
+- Breadcrumbs
+- Forms
+- Tables
+- Cards
+- Badges
+- Icon fonts
+- Tabs
+- Modals
+- Carousel
+
+The use of Bootstrap allowed the design of a responsive web site that renders nicely in all screen sizes.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -42,48 +44,26 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+Things you need to install:
 
-```
-Give examples
-```
+- [npm](https://www.npmjs.com/)
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running.
 
-Say what the step will be
+First, install all dependencies
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+``` bash
+npm install
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+Then run the dev server, either through NPM script, grunt or gulp:
 
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+``` bash
+npm run watch:all # NPM script
+npx grunt         # grunt
+npx gulp          # gulp
 ```
 
 ## 🎈 Usage <a name="usage"></a>
@@ -92,33 +72,26 @@ Add notes about how to use the system.
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
-``` bash
-npm run build
-```
+Either use an NPM script, grunt or gulp to generate a *dist/* folder with all files ready for deployment (minified, uglified and versioned):
 
 ``` bash
-npx grunt build
-```
-
-``` bash
-npx gulp
+npm run build   # NPM script
+npx grunt build # grunt
+npx gulp        # gulp
 ```
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Bootstrap](https://getbootstrap.com/) - Styling
+- [Font Awesome](https://fontawesome.com/) - Font icons
+- [jQuery](https://jquery.com/) - JS library
+- [Grunt](https://gruntjs.com/) - Task runner
+- [Gulp](https://gulpjs.com/) - Task runner
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+- [@nico-rodriguez](https://github.com/nico-rodriguez)
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- Coursera's course *Front End Web UI Frameworks and Tools: Bootstrap4*.
